@@ -30,6 +30,7 @@ ball_responses = ["certainly!", "ofc dude", "you may rely on it",
 "trust me you dont wanna know rn", "sorry im napping ask later", "cant predict rn",
 "how would i know im just a bot", "dont count on it", "outlook NOT so good",
 "a little birdie told me no", "doubtful", "lol no", "dude just go to therapy"]
+
 client = discord.Client()
 
 

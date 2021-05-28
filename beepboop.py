@@ -24,7 +24,12 @@ affirmations = ["you're amazing,and you deserve a treat. have a coffee!",
                 "coffee isn't a meal, please get something to eat. everyone deserves to stay healthy",
                 "tomorrow will be better than today, and every day we get closer to happiness :) hold out for the future!",
                 "you're perfect the way you are, don't ever change :)"]
-
+ball_responses = ["certainly!", "ofc dude", "you may rely on it",
+"yes defo", "decidedly so", "imo, yes", "most likely", "yupp",
+"outlook good", "signs point to yes", "reply hazy try later lol",
+"trust me you dont wanna know rn", "sorry im napping ask later", "cant predict rn",
+"how would i know im just a bot", "dont count on it", "outlook NOT so good",
+"a little birdie told me no", "doubtful", "lol no", "dude just go to therapy"]
 client = discord.Client()
 
 
@@ -68,6 +73,10 @@ async def on_message(message):
             affirm_int = random.randint(0, len(affirmations) - 1)
             await message.channel.send(usr + ", " + affirmations[affirm_int])
             # looks like >send affirm @user
+        #add 8ball command
+        if message.content.lower().startswith(">8ball"):
+            ball_int = random.randint(0, len(ball_responses) - 1)
+            await message.channel.send(ball_responses[ball_int])
         if message.content.lower().startswith(">music"):
             await message.channel.send("https://www.youtube.com/watch?v=A67ZkAd1wmI")
         if message.content.lower().startswith(">repeat"):
@@ -87,6 +96,7 @@ async def on_message(message):
 >affirm - Because everyone needs love, even you.
 >send affirm @user - Because sometimes we don't know how to communicate our appreciation for our loved ones
 >music - I will send you a music suggestion!
+>8ball - Do not take this command seriously! It's just for fun
 more commands in progress!`
 ''')
     if 'beepboop' in message.content.lower():

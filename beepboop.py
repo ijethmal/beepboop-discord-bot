@@ -24,6 +24,7 @@ affirmations = ["you're amazing,and you deserve a treat. have a coffee!",
                 "coffee isn't a meal, please get something to eat. everyone deserves to stay healthy",
                 "tomorrow will be better than today, and every day we get closer to happiness :) hold out for the future!",
                 "you're perfect the way you are, don't ever change :)"]
+
 ball_responses = ["certainly!", "ofc dude", "you may rely on it",
 "yes defo", "decidedly so", "imo, yes", "most likely", "yupp",
 "outlook good", "signs point to yes", "reply hazy try later lol",

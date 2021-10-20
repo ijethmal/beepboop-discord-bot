@@ -110,11 +110,15 @@ more commands in progress!`
     if 'bb' in message.content.lower():
         emoji = '🍑'
         await message.add_reaction(emoji)
+    if '<3' in message.content.lower():
+        emoji = '♥'
+        await message.add_reaction(emoji)
 
     #new
     if 'no u' in message.content.lower():
         await message.channel.send('no u')
     if ':(' in message.content.lower():
         await message.channel.send('pat pat')
+    
 
 client.run('Nzg5NDgwMTQ4MTE4MTQzMDA3.X9yqrw.d7PaQs-hIwHsKX72q-85j6RP-Vc')

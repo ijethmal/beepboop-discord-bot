@@ -1,1 +1,1 @@
-worker: python beepboop.py
+worker: python3 beepboop.py

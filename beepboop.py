@@ -1,5 +1,6 @@
 import discord
 import random
+#random code
 
 # define stuff needed for commands
 coffee_images = ["https://www.clipartkey.com/mpngs/m/101-1015553_coffee-cute-tumblr-coffee-sticker.png",

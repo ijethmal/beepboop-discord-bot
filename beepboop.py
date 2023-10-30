@@ -116,4 +116,4 @@ more commands in progress!`
         await message.channel.send('pat pat')
     
 
-client.run('Nzg5NDgwMTQ4MTE4MTQzMDA3.X9yqrw.d7PaQs-hIwHsKX72q-85j6RP-Vc')
+client.run('q7LNcMfoGvq7dj9ubLekj2D_Sni-3cPv')

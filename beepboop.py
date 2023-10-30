@@ -105,20 +105,13 @@ async def on_message(message):
 more commands in progress!`
 ''')
     if 'beepboop' in message.content.lower():
-        await message.channel.send(message.author.mention + " Call me BB! :)")
-    if 'gay' in message.content.lower():
-        emoji = '🌈'
+        emoji = '🍑'
         await message.add_reaction(emoji)
     if 'bb' in message.content.lower():
         emoji = '🍑'
         await message.add_reaction(emoji)
-    if '<3' in message.content.lower():
-        emoji = '♥'
-        await message.add_reaction(emoji)
 
     #new
-    if 'no u' in message.content.lower():
-        await message.channel.send('no u')
     if ':(' in message.content.lower():
         await message.channel.send('pat pat')
     

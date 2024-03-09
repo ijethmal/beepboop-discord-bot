@@ -1,5 +1,8 @@
 import discord
 import random
+import os 
+import dotenv
+from dotenv import load_dotenv
 #random code
 
 # define stuff needed for commands
@@ -63,9 +66,6 @@ async def on_message(message):
             coffee_int = random.randint(0, len(coffee_images) - 1)
             await message.channel.send(coffee_images[coffee_int])
             await message.channel.send("Enjoy your coffee, and have a nice day!")
-        if message.content.lower().startswith(">pronouns"):
-            await message.channel.send("My pronouns are they/them. Thank you for asking! What are yours? :)")
-            # add code for asking original author for pronouns, and responding to it
         if message.content.lower().startswith(">affirm"):
             affirmusr = str(message.author)
             affirmusr = affirmusr.split('#')
@@ -97,7 +97,6 @@ async def on_message(message):
 >help - For bot help
 >hello - I will respond with a greeting, addressed to you!
 >coffee - I will send you a coffee, but not the drinkable kind, for i am a discord bot.
->pronouns - Ask me for my pronouns!
 >affirm - Because everyone needs love, even you.
 >send affirm @user - Because sometimes we don't know how to communicate our appreciation for our loved ones
 >music - I will send you a music suggestion!
@@ -105,10 +104,10 @@ async def on_message(message):
 more commands in progress!`
 ''')
     if 'beepboop' in message.content.lower():
-        emoji = '🍑'
+        emoji = '💌'
         await message.add_reaction(emoji)
     if 'bb' in message.content.lower():
-        emoji = '🍑'
+        emoji = '💌'
         await message.add_reaction(emoji)
 
     #new
@@ -116,4 +115,6 @@ more commands in progress!`
         await message.channel.send('pat pat')
     
 
-client.run('q7LNcMfoGvq7dj9ubLekj2D_Sni-3cPv')
+load_dotenv()
+token = os.getenv('TOKEN')
+client.run(token)

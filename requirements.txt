@@ -5,6 +5,7 @@ chardet==4.0.0
 chars2vec==0.1.7    
 discord==1.7.3      
 discord.py==1.7.3   
+dotenv==0.0.5
 edit-distance==1.0.4
 idna==3.2
 multidict==5.1.0
